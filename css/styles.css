@@ -150,45 +150,6 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mail::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  transform: scaleX(0);
-}
-
-.mail:hover::after {
-  opacity: 1;
-  transform: scaleX(1);
-}
-
-.tel::after {
-  content: "";
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  opacity: 0;
-  transform: scaleX(0);
-}
-
-.tel:hover::after {
-  opacity: 1;
-  transform: scaleX(1);
-}
 
 .mail-icon {
   margin-right: 10px;
@@ -379,8 +340,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-link:hover,
@@ -395,6 +355,7 @@ body {
 
 .soc-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-title {
@@ -471,6 +432,7 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .company-link {
@@ -480,8 +442,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
@@ -775,6 +736,6 @@ body {
   overflow: hidden;
 }
 
-.filtr-link:hover .overley-text {
+.filtr-cards:hover .overley-text {
   transform: translateY(0);
 }
